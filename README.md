@@ -61,6 +61,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+### Basic Design 
+![image](https://user-images.githubusercontent.com/77981888/183095177-8198b07a-0a54-46c7-8a70-e44a2fe04bba.png)
+![image](https://user-images.githubusercontent.com/77981888/183095276-a91d108b-6233-42ff-aaf9-1fb47f4ad911.png)
+### Aim of PecMate
+![image](https://user-images.githubusercontent.com/77981888/183095417-7048f113-abfe-42a8-ada6-1a94eae46a07.png)
+
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
