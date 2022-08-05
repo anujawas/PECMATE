@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Freelancer Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet" />
+  <!--Stylesheet-->
+  <style media="screen">
+    *,
+    *:before,
+    *:after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+    }
+
+    .background {
+      width: 430px;
+      height: 580px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+    }
+
+    .background .shape {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .login {
+      border: 1px solid black;
+      text-decoration: none;
+      border-radius: 2px;
+      background-color: #6c55f9;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .shape:first-child {
+      background: linear-gradient(#6c55f9, hsl(248, 32%, 60%, 8%));
+      left: -80px;
+      top: -80px;
+    }
+
+    .shape:last-child {
+      background: linear-gradient(to right, white, white);
+      right: -30px;
+      bottom: -80px;
+    }
+
+    input.form-check-input {
+      width: 15px;
+      height: 15px;
+    }
+
+    form {
+      height: 550px;
+      width: 400px;
+      background-color: rgba(255, 255, 255, 0.13);
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      border: 2px solid black;
+      box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+      padding: 50px 35px;
+    }
+
+    form * {
+      font-family: "Poppins", sans-serif;
+      color: black;
+      letter-spacing: 0.5px;
+      outline: none;
+      border: none;
+    }
+
+    form h3 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 42px;
+      text-align: center;
+    }
+
+    input {
+      display: block;
+      height: 50px;
+      width: 100%;
+      /* background-color: rgba(255,255,255,0.07); */
+      border-radius: 3px;
+      padding: 0px 10px;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 300;
+      border: 1px solid black;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 50px;
+      width: 100%;
+      background-color: #ffffff;
+      color: black;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .social div {
+      background: white;
+      width: 150px;
+      border: 1px solid black;
+      border-radius: 3px;
+      padding: 5px 10px 10px 5px;
+
+      color: black;
+      text-align: center;
+    }
+
+    .social {
+      margin-top: 30px;
+      display: flex;
+    }
+
+    .social div:hover {
+      background-color: #6c55f9;
+      cursor: pointer;
+    }
+
+    .social .gb {
+      margin-left: 25px;
+    }
+
+    .orbar {
+      display: flex;
+    }
+
+    .name {
+      display: flex;
+      width: 150px;
+      padding: 5px 10px 10px 5px;
+    }
+
+    .login:hover {
+      background-color: grey;
+    }
+
+    .signupoption:hover {
+      text-decoration: underline;
+    }
+
+    .continue {
+      border: 2px solid black;
+      background-color: #6c55f9;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .continue:hover {
+      background-color: grey;
+      cursor: pointer;
+    }
+
+    a:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    .tsc2 {
+      display: flex;
+    }
+
+    input.formcheckinput {
+      height: 30px;
+      width: 30px;
+      margin-top: -7px;
+    }
+    .logo{
+        display: flex;
+        margin-top:30px;
+        margin-left: 90px;
+        font-family: sans-serif;
+      }
+      #logo1{
+          color:black;
+
+        }
+      #logo2{
+        color:#6c55f9;
+       
+      }
+      .lo{
+        font-size:40px;
+        font-weight: bolder;
+    
+      }
+      a{
+        text-decoration:none;
+  
+      }
+      a:hover{
+        text-decoration:none;
+        cursor:pointer;
+      }
+  </style>
+</head>
+
+<body>
+  <a href="../html/index.html"> <div class="logo">
+    <span class= "lo" id= "logo1">Pec</span><span class= "lo" id="logo2">Mate</span>
+  </div></a>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <form>
+    <h3 style="text-align: left; ">Register</h3>
+    <h5>As a Freelancer</h5>
+    <div style="font-size: 20px; font-weight: bold; text-align: center; margin-bottom: -20px;">
+      Continue with
+    </div>
+    <div class="social">
+      <div class="go"><i></i>
+        <span style="color: #4285f4 ;">G</span><span style="color:#ea4335;">o</span><span
+        style="color: #fbbc05;">o</span><span style="color: #4285f4 ;">g</span>
+        <span style="color: #34a853;">l</span><span style="color:#ea4335 ">e</span>
+      </div>
+
+      <div class="gb image"><i class="fab fa-github"> GitHub</i></div>
+    </div>
+    <div class="orbar">
+      <hr style="border: 0.5px solid black; margin-top:15px; width: 155px; height: 0px">
+      </hr>
+      <h5 style="margin-top: 5px">OR</h5>
+      <hr style="border: 0.5px solid black; margin-top:15px; width: 155px; height: 0px">
+      </hr>
+    </div>
+    <div class="input-group name">
+
+      <input type="text" aria-label="First name" class="form-control" placeholder="First Name"
+        style="float: left;  width: 155px;">
+      <input type="text" aria-label="Last name" class="form-control" placeholder="Last Name"
+        style="float: right; margin-left:10px; width: 155px;">
+    </div>
+    <div>
+      <input type="email" name="email" placeholder="Enter your Email" style="width: 320px; margin-left: 6px">
+    </div>
+    <div class="name">
+      <input type="password" name="" id="" placeholder="Password" style="float: left; width: 155px;">
+      <input type="password" name="" id="" placeholder="confirm password"
+        style="float: right; margin-left: 10px; width: 158px;">
+    </div>
+    <p style="font-size: 10px;">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+    
+    <input type="button" class="continue" onclick="location.href='signup_freelancer2.html'" value="Continue">
+    
+      <a style="text-align: center; margin-left: 110px ; font-size: 12px;" href="signin_freelancer.html">Already have an
+        account?Log in</a>
+  </form>
+</body>
+
+</html>
