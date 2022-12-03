@@ -72,7 +72,7 @@ function Student() {
         <input type="search" placeholder="Search here" />
       </div>
       <div className="user-wrapper">
-        <img src="assets/user.png" width="40px" height="40px" alt />
+        <img src="assets/user.png" width="40px" height="40px" alt="" />
         <div>
           <h4>Abhi Mehta</h4>
           <small>Student</small>

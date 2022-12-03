@@ -6,7 +6,7 @@ const Shop = (props) => {
             <div className="card-blog">
                 <div className="header">
                     <div className="post-thumb">
-                        <img src={props.img} alt={Error} style={{ width: "280px" }} />
+                        <img src={props.img} alt="Error" style={{ width: "280px" }} />
                     </div>
                 </div>
                 <div className="body">

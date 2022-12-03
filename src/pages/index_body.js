@@ -48,7 +48,7 @@ function body() {
                     <img
                       style={{ width: 100 }}
                       src={assilogo}
-                      alt
+                      alt="Logo"
                     />
                   </div>
                   <div className="body">
