@@ -6,7 +6,7 @@ import freelogo from "../assets/img/services/service-3.svg";
 import goal from "../assets/img/goal.svg";
 import moto from "../assets/img/undraw_organizing_projects_re_9p1k.svg";
 import { Link } from "react-router-dom";
-import Shop from "../Shops";
+import Shop from "../pages/Shops";
 function body() {
   return (
     <div>

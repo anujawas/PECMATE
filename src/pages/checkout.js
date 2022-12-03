@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from "../header";
-import '../../assets/css/bootstrap.css';
-import '../../assets/css/maicons.css';
-import '../../assets/vendor/animate/animate.css';
-import '../../assets/css/theme.css';
+import Header from "./header";
+import '../assets/css/bootstrap.css';
+import '../assets/css/maicons.css';
+import '../assets/vendor/animate/animate.css';
+import '../assets/css/theme.css';
 
 function Checkout() {
     return (

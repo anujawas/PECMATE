@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom'
-import '../signup/signinmain.css';
+import '../assets/css/signinmain.css';
 function Signinmain() {
     return (
         <div>
@@ -21,7 +21,7 @@ function Signinmain() {
                 </div>
                 <form>
                     <h3 className="loginlogo">Login</h3>
-                    <Link  to ="">
+                    <Link  to ="/">
                     <input
                         type="button"
                         className="login"
@@ -29,7 +29,7 @@ function Signinmain() {
                         defaultValue="Sign in as student"
                     />
                     </Link >
-                    <Link to="/signup/signinfreelancer">
+                    <Link to="/">
                     <input
                         type="button"
                         className="login"
@@ -37,7 +37,7 @@ function Signinmain() {
                         defaultValue="Sign in as Freelancer"
                     />
                     </Link>
-                    <Link>
+                    <Link to={"/"}>
                     <input
                         type="button"
                         className="login"
@@ -45,7 +45,7 @@ function Signinmain() {
                         defaultValue="Sign in as Vendor"
                     /></Link>
                     <div className="signupoption">
-                        <Link to ="signupmain">Don't have an account?Sign up here</Link>
+                        <Link to ="/">Don't have an account?Sign up here</Link>
                     </div>
                 </form>
             </div>

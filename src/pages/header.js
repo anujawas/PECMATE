@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 function Header() {
     return (
@@ -34,7 +33,7 @@ function Header() {
                                 <Link className="nav-link" to="/about">About Us</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="btn btn-primary ml-lg-2" to="./signup/Signinmain">Log-in</Link>
+                                <Link className="btn btn-primary ml-lg-2" to="/signup/Signinmain">Log-in</Link>
                             </li>
 
                         </ul>
@@ -43,15 +42,7 @@ function Header() {
                 </div>
             </nav>
         </header>
-        <Helmet>
-        <script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
 
-        <script type="text/javascript" src="../assets/js/bootstrap.bundle.min.js"></script>
-
-        <script type="text/javascript" src="../assets/vendor/wow/wow.min.js"></script>
-
-        <script type="text/javascript" src="../assets/js/theme.js"></script>
-      </Helmet>
     </div>
     );
 }

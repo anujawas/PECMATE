@@ -1,7 +1,6 @@
 import React from "react";
 import back from '../assets/img/world_pattern.svg';
 import {Link} from 'react-router-dom'
-import { Helmet } from "react-helmet";
 function Footer() {
     return (
         <div>
@@ -47,15 +46,7 @@ function Footer() {
                     <p class="text-center" id="copyright">Copyright &copy; 2021 PecMate</p>
                 </div>
             </footer>
-            <Helmet>
-        <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"/>
 
-        <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"/>
-
-        <script type="text/javascript" src="./assets/vendor/wow/wow.min.js"/>
-
-        <script type="text/javascript" src="./assets/js/theme.js"/>
-      </Helmet>
         </div>
         
     );

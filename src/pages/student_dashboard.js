@@ -1,7 +1,7 @@
 import React from 'react';
-import './src/html/user_dashboard/dashboard_style.css';
+import '../assets/css/dashboard_style.css';
 
-function Freelancer() {
+function Student() {
     return (
         <>
   <input type="checkbox" id="nav-toggle" />
@@ -17,19 +17,13 @@ function Freelancer() {
         <li>
           <a href className="active">
             <span className="las la-plus-circle" />
-            <span>New Work</span>
+            <span>New Upload</span>
           </a>
         </li>
         <li>
           <a href>
             <span className="las la-user" />
-            <span>Users</span>
-          </a>
-        </li>
-        <li>
-          <a href>
-            <span className="las la-clipboard-list" />
-            <span>Tasks</span>
+            <span>User Profile</span>
           </a>
         </li>
         <li>
@@ -41,13 +35,13 @@ function Freelancer() {
         <li>
           <a href>
             <span className="las la-phone" />
-            <span>Contacts</span>
+            <span>Contacts Us</span>
           </a>
         </li>
         <li>
           <a href>
             <span className="las la-receipt" />
-            <span>Current Income</span>
+            <span>Current Plan</span>
           </a>
         </li>
         <li>
@@ -80,8 +74,8 @@ function Freelancer() {
       <div className="user-wrapper">
         <img src="assets/user.png" width="40px" height="40px" alt />
         <div>
-          <h4>Sahil Ahmed</h4>
-          <small>Freelancer</small>
+          <h4>Abhi Mehta</h4>
+          <small>Student</small>
         </div>
       </div>
     </header>
@@ -89,7 +83,7 @@ function Freelancer() {
       <div className="cards">
         <div className="card-single">
           <div>
-            <h1>0</h1>
+            <h1>8</h1>
             <span>Orders</span>
           </div>
           <div>
@@ -98,7 +92,7 @@ function Freelancer() {
         </div>
         <div className="card-single">
           <div>
-            <h1>0</h1>
+            <h1>6</h1>
             <span>Assignment</span>
           </div>
           <div>
@@ -107,7 +101,7 @@ function Freelancer() {
         </div>
         <div className="card-single">
           <div>
-            <h1>0</h1>
+            <h1>2</h1>
             <span>Practicals</span>
           </div>
           <div>
@@ -116,11 +110,11 @@ function Freelancer() {
         </div>
         <div className="card-single">
           <div>
-            <h1>₹ 0</h1>
-            <span>Earninng</span>
+            <h1>Premium</h1>
+            <span>Current Plan</span>
           </div>
           <div>
-            <span style={{ color: "white" }} className="las la-wallet" />
+            <span style={{ color: "white" }} className="las la-shopping-bag" />
           </div>
         </div>
       </div>
@@ -128,7 +122,7 @@ function Freelancer() {
         <div className="projects">
           <div className="card">
             <div className="card-header">
-              <h3>Recent Projects</h3>
+              <h3>Recent Orders</h3>
               <button>
                 See all <span className="las la-arrow-right" />
               </button>
@@ -150,7 +144,7 @@ function Freelancer() {
                       <td>Applied Physics</td>
                       <td>
                         <span className="status yellow" />
-                        Pending
+                        Assigned
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -161,7 +155,7 @@ function Freelancer() {
                       <td>Applied Maths</td>
                       <td>
                         <span className="status yellow " />
-                        Pending
+                        Assigned
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -172,7 +166,7 @@ function Freelancer() {
                       <td>Propulsion</td>
                       <td>
                         <span className="status red" />
-                        Rejected
+                        Pending
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -183,7 +177,7 @@ function Freelancer() {
                       <td>IEEE</td>
                       <td>
                         <span className="status green" />
-                        Done
+                        completed
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -196,7 +190,7 @@ function Freelancer() {
                       <td>Applied Physics</td>
                       <td>
                         <span className="status yellow" />
-                        Pending
+                        Assigned
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -207,7 +201,7 @@ function Freelancer() {
                       <td>Applied Maths</td>
                       <td>
                         <span className="status yellow" />
-                        Pending
+                        Assigned
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -218,7 +212,7 @@ function Freelancer() {
                       <td>Data structure</td>
                       <td>
                         <span className="status green" />
-                        Done
+                        Completed
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -229,7 +223,7 @@ function Freelancer() {
                       <td>IEEE</td>
                       <td>
                         <span className="status green" />
-                        Done
+                        completed
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -244,66 +238,85 @@ function Freelancer() {
         <div className="customers">
           <div className="card">
             <div className="card-header">
-              <h3>New Contact</h3>
-              <button>
-                See all <span className="las la-arrow-right" />
-              </button>
+              <h3>New Assignment/Practical</h3>
+              {/* <button>Upload<span class="las la-arrow-right" ></span></button> */}
             </div>
-            <div className="card-body">
-              <div className="customer">
-                <div className="info">
-                  <img src="assets/user.png" width="40px" height="40px" alt />
-                  <div>
-                    <h4>Abhi Mehta</h4>
-                    <small>Aerospace</small>
+            <div className="customers">
+              <div className="card">
+                <div className="card-header">
+                  <h5 style={{ justifyContent: "center" }}>
+                    9 Assignments and 1 Practical left in your Premium Account
+                  </h5>
+                </div>
+                <div className="customers">
+                  <div className="card">
+                    <div className="card-header">
+                      <button>
+                        Upload
+                        <div
+                          className="las la-arrow-right"
+                          style={{ margin: "auto" }}
+                        />
+                      </button>
+                    </div>
+                    {/* <div class="card-body">
+                      <div class="customer">
+                          <div class="info">
+                              <img src="assets/user.png" width="40px" height="40px" alt="">
+                              <div>
+                                  <h4>Abhi Mehta</h4>
+                                  <small>Aerospace</small>
+                               </div>
+                          </div>
+                          <div class="contact">
+                              <span class="las la-user-circle" ></span>
+                              <span class="las la-comment" ></span>
+                              <span class="las la-phone" ></span>
+                          </div>
+                      </div>
+                      <div class="customer">
+                          <div class="info">
+                              <img src="assets/user.png" width="40px" height="40px" alt="">
+                              <div>
+                                  <h4>Anuj Awasthi</h4>
+                                  <small>Electrical</small>
+                               </div>
+                          </div>
+                          <div class="contact">
+                              <span class="las la-user-circle" ></span>
+                              <span class="las la-comment" ></span>
+                              <span class="las la-phone" ></span>
+                          </div>
+                      </div>
+                      <div class="customer">
+                          <div class="info">
+                              <img src="assets/user.png" width="40px" height="40px" alt="">
+                              <div>
+                                  <h4>Goru</h4>
+                                  <small>Aerospace</small>
+                               </div>
+                          </div>
+                          <div class="contact">
+                              <span class="las la-user-circle" ></span>
+                              <span class="las la-comment" ></span>
+                              <span class="las la-phone" ></span>
+                          </div>
+                      </div>
+                      <div class="customer">
+                          <div class="info">
+                              <img src="assets/user.png" width="40px" height="40px" alt="">
+                              <div>
+                                  <h4>Vinay</h4>
+                                  <small>Aerospace</small>
+                               </div>
+                          </div>
+                          <div class="contact">
+                              <span class="las la-user-circle" ></span>
+                              <span class="las la-comment" ></span>
+                              <span class="las la-phone" ></span>
+                          </div>
+                      </div> */}
                   </div>
-                </div>
-                <div className="contact">
-                  <span className="las la-user-circle" />
-                  <span className="las la-comment" />
-                  <span className="las la-phone" />
-                </div>
-              </div>
-              <div className="customer">
-                <div className="info">
-                  <img src="assets/user.png" width="40px" height="40px" alt />
-                  <div>
-                    <h4>Anuj Awasthi</h4>
-                    <small>Electrical</small>
-                  </div>
-                </div>
-                <div className="contact">
-                  <span className="las la-user-circle" />
-                  <span className="las la-comment" />
-                  <span className="las la-phone" />
-                </div>
-              </div>
-              <div className="customer">
-                <div className="info">
-                  <img src="assets/user.png" width="40px" height="40px" alt />
-                  <div>
-                    <h4>Goru</h4>
-                    <small>Aerospace</small>
-                  </div>
-                </div>
-                <div className="contact">
-                  <span className="las la-user-circle" />
-                  <span className="las la-comment" />
-                  <span className="las la-phone" />
-                </div>
-              </div>
-              <div className="customer">
-                <div className="info">
-                  <img src="assets/user.png" width="40px" height="40px" alt />
-                  <div>
-                    <h4>Vinay</h4>
-                    <small>Aerospace</small>
-                  </div>
-                </div>
-                <div className="contact">
-                  <span className="las la-user-circle" />
-                  <span className="las la-comment" />
-                  <span className="las la-phone" />
                 </div>
               </div>
             </div>
@@ -316,4 +329,5 @@ function Freelancer() {
 
     )
 }
-export default Freelancer;
+
+export default Student

@@ -1,13 +1,12 @@
 import React from 'react';
-import './assets/css/bootstrap.css';
-import './assets/css/maicons.css';
-import './assets/vendor/animate/animate.css';
-import './assets/css/theme.css';
-import Header from './html/header'; 
+import '../assets/css/bootstrap.css';
+import '../assets/css/maicons.css';
+import '../assets/vendor/animate/animate.css';
+import '../assets/css/theme.css';
+import Header from '../pages/header'; 
 import Shop from "./Shops";
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
-import Footer from './html/footer';
+import Footer from '../pages/footer';
 function App() {
   return (
     <div>
@@ -158,15 +157,6 @@ function App() {
       </div>
 
       <Footer/>
-      <Helmet>
-        <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"/>
-
-        <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"/>
-
-        <script type="text/javascript" src="./assets/vendor/wow/wow.min.js"/>
-
-        <script type="text/javascript" src="./assets/js/theme.js"/>
-      </Helmet>
     </div>
   );
 

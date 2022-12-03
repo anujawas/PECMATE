@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-import "./assets/css/maicons.css"
-import "./assets/css/bootstrap.css"
-import "./assets/vendor/animate/animate.css"
-import "./assets/css/theme.css"
+import "../assets/css/maicons.css"
+import "../assets/css/bootstrap.css"
+import "../assets/vendor/animate/animate.css"
+import "../assets/css/theme.css"
 import Item from './item';
-import Header from "./html/header";
-import Footer from "./html/footer";
+import Header from "../pages/header";
+import Footer from "../pages/footer";
 class Particularshop extends Component {
   constructor(props) {
     super(props)

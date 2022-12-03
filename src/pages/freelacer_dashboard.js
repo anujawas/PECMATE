@@ -1,9 +1,9 @@
 import React from 'react';
-import './src/html/user_dashboard/dashboard_style.css';
+import '../assets/css/dashboard_style.css';
 
-function Student() {
+function Freelancer() {
     return (
-        ;<>
+        <>
   <input type="checkbox" id="nav-toggle" />
   <div className="sidebar">
     <div className="sidebar-brand">
@@ -17,13 +17,19 @@ function Student() {
         <li>
           <a href className="active">
             <span className="las la-plus-circle" />
-            <span>New Upload</span>
+            <span>New Work</span>
           </a>
         </li>
         <li>
           <a href>
             <span className="las la-user" />
-            <span>User Profile</span>
+            <span>Users</span>
+          </a>
+        </li>
+        <li>
+          <a href>
+            <span className="las la-clipboard-list" />
+            <span>Tasks</span>
           </a>
         </li>
         <li>
@@ -35,13 +41,13 @@ function Student() {
         <li>
           <a href>
             <span className="las la-phone" />
-            <span>Contacts Us</span>
+            <span>Contacts</span>
           </a>
         </li>
         <li>
           <a href>
             <span className="las la-receipt" />
-            <span>Current Plan</span>
+            <span>Current Income</span>
           </a>
         </li>
         <li>
@@ -74,8 +80,8 @@ function Student() {
       <div className="user-wrapper">
         <img src="assets/user.png" width="40px" height="40px" alt />
         <div>
-          <h4>Abhi Mehta</h4>
-          <small>Student</small>
+          <h4>Sahil Ahmed</h4>
+          <small>Freelancer</small>
         </div>
       </div>
     </header>
@@ -83,7 +89,7 @@ function Student() {
       <div className="cards">
         <div className="card-single">
           <div>
-            <h1>8</h1>
+            <h1>0</h1>
             <span>Orders</span>
           </div>
           <div>
@@ -92,7 +98,7 @@ function Student() {
         </div>
         <div className="card-single">
           <div>
-            <h1>6</h1>
+            <h1>0</h1>
             <span>Assignment</span>
           </div>
           <div>
@@ -101,7 +107,7 @@ function Student() {
         </div>
         <div className="card-single">
           <div>
-            <h1>2</h1>
+            <h1>0</h1>
             <span>Practicals</span>
           </div>
           <div>
@@ -110,11 +116,11 @@ function Student() {
         </div>
         <div className="card-single">
           <div>
-            <h1>Premium</h1>
-            <span>Current Plan</span>
+            <h1>₹ 0</h1>
+            <span>Earninng</span>
           </div>
           <div>
-            <span style={{ color: "white" }} className="las la-shopping-bag" />
+            <span style={{ color: "white" }} className="las la-wallet" />
           </div>
         </div>
       </div>
@@ -122,7 +128,7 @@ function Student() {
         <div className="projects">
           <div className="card">
             <div className="card-header">
-              <h3>Recent Orders</h3>
+              <h3>Recent Projects</h3>
               <button>
                 See all <span className="las la-arrow-right" />
               </button>
@@ -144,7 +150,7 @@ function Student() {
                       <td>Applied Physics</td>
                       <td>
                         <span className="status yellow" />
-                        Assigned
+                        Pending
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -155,7 +161,7 @@ function Student() {
                       <td>Applied Maths</td>
                       <td>
                         <span className="status yellow " />
-                        Assigned
+                        Pending
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -166,7 +172,7 @@ function Student() {
                       <td>Propulsion</td>
                       <td>
                         <span className="status red" />
-                        Pending
+                        Rejected
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -177,7 +183,7 @@ function Student() {
                       <td>IEEE</td>
                       <td>
                         <span className="status green" />
-                        completed
+                        Done
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -190,7 +196,7 @@ function Student() {
                       <td>Applied Physics</td>
                       <td>
                         <span className="status yellow" />
-                        Assigned
+                        Pending
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -201,7 +207,7 @@ function Student() {
                       <td>Applied Maths</td>
                       <td>
                         <span className="status yellow" />
-                        Assigned
+                        Pending
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -212,7 +218,7 @@ function Student() {
                       <td>Data structure</td>
                       <td>
                         <span className="status green" />
-                        Completed
+                        Done
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -223,7 +229,7 @@ function Student() {
                       <td>IEEE</td>
                       <td>
                         <span className="status green" />
-                        completed
+                        Done
                       </td>
                       <td>
                         <span>20-12-2020</span>{" "}
@@ -238,85 +244,66 @@ function Student() {
         <div className="customers">
           <div className="card">
             <div className="card-header">
-              <h3>New Assignment/Practical</h3>
-              {/* <button>Upload<span class="las la-arrow-right" ></span></button> */}
+              <h3>New Contact</h3>
+              <button>
+                See all <span className="las la-arrow-right" />
+              </button>
             </div>
-            <div className="customers">
-              <div className="card">
-                <div className="card-header">
-                  <h5 style={{ justifyContent: "center" }}>
-                    9 Assignments and 1 Practical left in your Premium Account
-                  </h5>
-                </div>
-                <div className="customers">
-                  <div className="card">
-                    <div className="card-header">
-                      <button>
-                        Upload
-                        <div
-                          className="las la-arrow-right"
-                          style={{ margin: "auto" }}
-                        />
-                      </button>
-                    </div>
-                    {/* <div class="card-body">
-                      <div class="customer">
-                          <div class="info">
-                              <img src="assets/user.png" width="40px" height="40px" alt="">
-                              <div>
-                                  <h4>Abhi Mehta</h4>
-                                  <small>Aerospace</small>
-                               </div>
-                          </div>
-                          <div class="contact">
-                              <span class="las la-user-circle" ></span>
-                              <span class="las la-comment" ></span>
-                              <span class="las la-phone" ></span>
-                          </div>
-                      </div>
-                      <div class="customer">
-                          <div class="info">
-                              <img src="assets/user.png" width="40px" height="40px" alt="">
-                              <div>
-                                  <h4>Anuj Awasthi</h4>
-                                  <small>Electrical</small>
-                               </div>
-                          </div>
-                          <div class="contact">
-                              <span class="las la-user-circle" ></span>
-                              <span class="las la-comment" ></span>
-                              <span class="las la-phone" ></span>
-                          </div>
-                      </div>
-                      <div class="customer">
-                          <div class="info">
-                              <img src="assets/user.png" width="40px" height="40px" alt="">
-                              <div>
-                                  <h4>Goru</h4>
-                                  <small>Aerospace</small>
-                               </div>
-                          </div>
-                          <div class="contact">
-                              <span class="las la-user-circle" ></span>
-                              <span class="las la-comment" ></span>
-                              <span class="las la-phone" ></span>
-                          </div>
-                      </div>
-                      <div class="customer">
-                          <div class="info">
-                              <img src="assets/user.png" width="40px" height="40px" alt="">
-                              <div>
-                                  <h4>Vinay</h4>
-                                  <small>Aerospace</small>
-                               </div>
-                          </div>
-                          <div class="contact">
-                              <span class="las la-user-circle" ></span>
-                              <span class="las la-comment" ></span>
-                              <span class="las la-phone" ></span>
-                          </div>
-                      </div> */}
+            <div className="card-body">
+              <div className="customer">
+                <div className="info">
+                  <img src="assets/user.png" width="40px" height="40px" alt />
+                  <div>
+                    <h4>Abhi Mehta</h4>
+                    <small>Aerospace</small>
                   </div>
+                </div>
+                <div className="contact">
+                  <span className="las la-user-circle" />
+                  <span className="las la-comment" />
+                  <span className="las la-phone" />
+                </div>
+              </div>
+              <div className="customer">
+                <div className="info">
+                  <img src="assets/user.png" width="40px" height="40px" alt />
+                  <div>
+                    <h4>Anuj Awasthi</h4>
+                    <small>Electrical</small>
+                  </div>
+                </div>
+                <div className="contact">
+                  <span className="las la-user-circle" />
+                  <span className="las la-comment" />
+                  <span className="las la-phone" />
+                </div>
+              </div>
+              <div className="customer">
+                <div className="info">
+                  <img src="assets/user.png" width="40px" height="40px" alt />
+                  <div>
+                    <h4>Goru</h4>
+                    <small>Aerospace</small>
+                  </div>
+                </div>
+                <div className="contact">
+                  <span className="las la-user-circle" />
+                  <span className="las la-comment" />
+                  <span className="las la-phone" />
+                </div>
+              </div>
+              <div className="customer">
+                <div className="info">
+                  <img src="assets/user.png" width="40px" height="40px" alt />
+                  <div>
+                    <h4>Vinay</h4>
+                    <small>Aerospace</small>
+                  </div>
+                </div>
+                <div className="contact">
+                  <span className="las la-user-circle" />
+                  <span className="las la-comment" />
+                  <span className="las la-phone" />
                 </div>
               </div>
             </div>
@@ -329,5 +316,4 @@ function Student() {
 
     )
 }
-
-export default Student
+export default Freelancer;
