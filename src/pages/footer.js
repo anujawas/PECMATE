@@ -4,22 +4,22 @@ import {Link} from 'react-router-dom'
 function Footer() {
     return (
         <div>
-            <footer class="page-footer bg-image" style={{backgroundImage: `url(${back})`}}>
-                <div class="container">
-                    <div class="row mb-5">
-                        <div class="col-lg-3 py-3">
+            <footer className="page-footer bg-image" style={{backgroundImage: `url(${back})`}}>
+                <div className="container">
+                    <div className="row mb-5">
+                        <div className="col-lg-3 py-3">
                             <h3>PECMATE</h3>
                             <p>This revoultionary idea was founded by meticuluos students of PEC, saving a lot of students from faiing in their subjects.</p>
 
-                            <div class="social-media-button">
-                                <a href = "https://www.facebook.com/profile.php?id=100075717600557"><span class="mai-logo-facebook-f"></span></a>
-                                <a href="https://twitter.com/PecMate"><span class="mai-logo-twitter"></span></a>
-                                <a href="https://www.instagram.com/pecmate/"><span class="mai-logo-instagram"></span></a>
+                            <div className="social-media-button">
+                                <a href = "https://www.facebook.com/profile.php?id=100075717600557"><span className="mai-logo-facebook-f"></span></a>
+                                <a href="https://twitter.com/PecMate"><span className="mai-logo-twitter"></span></a>
+                                <a href="https://www.instagram.com/pecmate/"><span className="mai-logo-instagram"></span></a>
                             </div>
                         </div>
-                        <div class="col-lg-3 py-3">
+                        <div className="col-lg-3 py-3">
                             <h5>PECMATE</h5>
-                            <ul class="footer-menu">
+                            <ul className="footer-menu">
                                 <li><Link to="/about">About Us</Link></li>
                                 <li><Link to="/pec_market">PecMarket</Link></li>
                                 <li><Link to="/service">Services</Link></li>
@@ -27,23 +27,23 @@ function Footer() {
                                 <li><Link to="/contact">Help & Support</Link></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 py-3">
+                        <div className="col-lg-3 py-3">
                             <h5>Contact Us</h5>
                             <p>Punjab Engineering College Sector 12 Chandigarh</p>
-                            <Link to="/" class="footer-link">+91 999999650</Link> <br/>
-                            <a href="https://pecmate.000webhostapp.com/" class ="footer-link">pecmate.nic.in</a>
+                            <Link to="/" className="footer-link">+91 999999650</Link> <br/>
+                            <a href="https://pecmate.000webhostapp.com/" className ="footer-link">pecmate.nic.in</a>
                         </div>
-                        <div class="col-lg-3 py-3">
+                        <div className="col-lg-3 py-3">
                             <h5>Newsletter</h5>
                             <p>Get updates, news or events on your mail.</p>
                             
-                                <input type="text" class="form-control" placeholder="Enter your email.."/>
-                                <button type ="submit" class ="btn btn-success btn-block mt-2">Subscribe</button>
+                                <input type="text" className="form-control" placeholder="Enter your email.."/>
+                                <button type ="submit" className ="btn btn-success btn-block mt-2">Subscribe</button>
                             
                         </div>
                     </div>
 
-                    <p class="text-center" id="copyright">Copyright &copy; 2021 PecMate</p>
+                    <p className="text-center" id="copyright">Copyright &copy; 2021 PecMate</p>
                 </div>
             </footer>
 

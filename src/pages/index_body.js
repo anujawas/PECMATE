@@ -25,11 +25,10 @@ function body() {
               </div>
               <div className="col-md-6 py-5 wow zoomIn">
                 <div className="img-fluid text-center">
-                  {/* <img src="../assets/img/banner_image_1.svg" alt=""> */}
                   <img
                     style={{ width: 500, paddingRight: 30 }}
                     src={logo}
-                    alt="image"
+                    alt="logopic"
                   />
                 </div>
               </div>
@@ -63,7 +62,7 @@ function body() {
               <div className="col-lg-4">
                 <div className="card-service wow fadeInUp">
                   <div className="header">
-                    <img src={peclogo} alt />
+                    <img src={peclogo} alt="" />
                   </div>
                   <div className="body">
                     <h5 className="text-secondary">Pec-Market Section</h5>
@@ -83,7 +82,7 @@ function body() {
               <div className="col-lg-4">
                 <div className="card-service wow fadeInUp">
                   <div className="header">
-                    <img src={freelogo} alt />
+                    <img src={freelogo} alt="" />
                   </div>
                   <div className="body">
                     <h5 className="text-secondary">Work as a freelancer </h5>
@@ -241,7 +240,7 @@ function body() {
                     <br />
                   </div>
                   <div className="footer">
-                    <a href="#" className="btn btn-pricing btn-block">
+                    <a href="/" className="btn btn-pricing btn-block">
                       Subscribe
                     </a>
                   </div>
@@ -285,7 +284,7 @@ function body() {
                     </p>
                   </div>
                   <div className="footer">
-                    <a href="#" className="btn btn-pricing btn-block">
+                    <a href="/" className="btn btn-pricing btn-block">
                       Subscribe
                     </a>
                   </div>
@@ -324,7 +323,7 @@ function body() {
                     </p>
                   </div>
                   <div className="footer">
-                    <a href="#" className="btn btn-pricing btn-block">
+                    <a href="/" className="btn btn-pricing btn-block">
                       Subscribe
                     </a>
                   </div>
