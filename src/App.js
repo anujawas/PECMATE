@@ -1,7 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { Routes } from 'react-router-dom';
+import { Route,BrowserRouter,Routes } from 'react-router-dom';
 import './App.css';
 import Pecmarket from './pages/pecmarket';
 import Itemlist from './pages/pankaj_Item_list';
